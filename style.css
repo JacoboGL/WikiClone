@@ -1,0 +1,335 @@
+/* INITIAL CONFIG */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* MAIN CSS */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* LOGO */
+
+main .main-logo {
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main .main-logo p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+main .main-logo img{
+    width: 250px;
+}
+
+/* LANGUAGE SELECT */
+
+main .main-languages {
+    display: grid;
+    grid-template-columns: 150px 250px 150px;
+    row-gap: 20px;
+}
+
+main .main-language {
+    width: 150px;
+    padding: 5px 0 5px;
+    cursor: pointer;
+}
+
+main .main-language:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+main .main-languages a {
+    text-decoration: none;
+    color: #3366cc;
+    font-size: 2rem;
+}
+
+main .main-languages a:hover {
+    text-decoration: underline;
+}
+
+main .main-languages p {
+    font-size: 1.2rem;
+    color: #9da0a2;
+}
+
+main .main-languages .main-english {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin-left: 40px;
+}
+
+main .main-languages .main-russian {
+    grid-column: 1;
+    grid-row: 2;
+    text-align: center;
+}
+
+main .main-languages .main-dutch {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    margin-left: -40px;
+}
+
+main .main-languages .main-italian {
+    grid-column: 1;
+    grid-row: 4;
+    text-align: center;
+}
+
+main .main-languages .main-arabic {
+    grid-column: 1;
+    grid-row: 5;
+    text-align: center;
+    margin-left: 40px;
+}
+
+main .main-languages .main-spanish {
+    grid-column: 3;
+    grid-row: 1;
+    text-align: center;
+    margin-left: -40px;
+}
+
+main .main-languages .main-chinese {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+}
+
+main .main-languages .main-french {
+    grid-column: 3;
+    grid-row: 3;
+    text-align: center;
+    margin-left: 40px;
+}
+
+main .main-languages .main-japanese {
+    grid-column: 3;
+    grid-row: 4;
+    text-align: center;
+}
+
+main .main-languages .main-polish {
+    grid-column: 3;
+    grid-row: 5;
+    text-align: center;
+    margin-left: -40px;
+}
+
+main .main-languages img {
+    grid-column: 2;
+    grid-row: 1;
+    position: absolute;
+    width: 250px;
+    padding-top: 55px;
+    cursor: pointer;
+}
+
+/* SEARCH BAR */
+
+main .main-search-bar-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+main .main-search-bar-container .main-search-bar input{
+    width: 450px;
+    height: 43px;
+}
+
+main .main-search-bar-container .main-search-bar input:hover {
+    border: 2px solid #838383;
+}
+
+main .main-search-bar-container .main-search-bar-language {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 340px;
+}
+
+main .main-search-bar-container .main-search-bar-language p {
+    font-size: 1.6rem;
+    color: #9da0a2;
+}
+
+main .main-search-bar-container .main-search-bar-icon {
+    background-color: #3366cc;
+    cursor: pointer;
+    
+}
+
+main .main-search-bar-container .main-search-bar-icon img {
+    width: 20px;
+    height: 20px;
+    margin: 10px 20px 10px;
+}
+
+/* TRANSLATION BAR */
+
+main .translation-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+main .divider-small {
+    height: 1px;
+    width: 85px;
+    border-top: 0px solid #fafafa;
+}
+
+main .translation-list-box {
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 15px 5px;
+    margin: 0 20px 0;
+    cursor: pointer;
+    background-color: #fafafa;
+}
+
+main .translation-list-box:hover {
+    background-color: #ffffff;
+}
+
+main .translation-list-box img {
+    width: 32px;
+}
+
+main .translation-list-box p {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #3366cc;
+}
+
+main .divider-large {
+    height: 1px;
+    width: 100%;
+    border-top: 0px solid #fafafa;
+}
+
+/* FOOTER AND LINKS */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+footer .footer-about {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+footer .footer-about #wiki-foundation {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 400px;
+}
+
+footer .footer-about #wiki-foundation img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+footer .footer-about #wiki-foundation-text, #wiki-app-text {
+    font-size: 1.5rem;
+    color: #838383;
+}
+
+footer .footer-about #wiki-foundation-text a, #wiki-app-text a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+/* APP SECTION */
+
+footer #wiki-app {
+    display: flex;
+    width: 400px;
+}
+
+footer #wiki-app #wiki-app-logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+    margin-left: -5px;
+}
+
+footer #wiki-app #wiki-app-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer #wiki-app #wiki-app-text a {
+    margin-bottom: 20px;
+}
+
+footer #wiki-app #wiki-app-platforms {
+    display: flex;
+    margin-top: 30px;
+}
+
+footer #wiki-app #wiki-app-platforms-google {
+    width: 150px;
+    margin-right: 20px;
+}
+
+footer #wiki-app #wiki-app-platforms-apple {
+    width: 150px;
+}
+
+/* FOOTER LINKS */
+
+footer .footer-links {
+    display: grid;
+}
+
+footer .footer-links .footer-link-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: 1.5rem;
+    color: #838383;
+}
+
+footer .footer-links .footer-link-container a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+footer .footer-links .footer-link-container img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+}
